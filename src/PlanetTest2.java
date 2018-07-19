@@ -23,7 +23,7 @@ public class PlanetTest2 {
 
 	//Add Circles for planet sizes
 	MakeCircle planetOne = new MakeCircle();
-	
+	triangle trianglePane = new triangle();
 	
 	/**
 	 * Launch the application.
@@ -99,7 +99,7 @@ public class PlanetTest2 {
 		panel.setPreferredSize(new Dimension(100, 1000));
 		panel.setLayout(null);
 		
-		triangle trianglePane = new triangle();
+		
 		mainPane.add(trianglePane);
 		trianglePane.setVisible(false);
 		
@@ -209,13 +209,6 @@ public class PlanetTest2 {
 		gravity_Panel.add(textArea, BorderLayout.SOUTH);
 		gravity_Panel.setVisible(false);
 		
-		/*planetOne.setVisible(false);
-		scrollPane_1.setVisible(false);
-		panel_4.setVisible(false);
-		panel_1.setVisible(false);
-		
-		panel.setVisible(false);*/
-		
 		btnStartHere.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				try {
@@ -232,7 +225,6 @@ public class PlanetTest2 {
 				double distanceFromSun[] = {newplanet.getDistanceFromSun(planetNumberOne), newplanet.getDistanceFromSun(planetNumberTwo)};				
 				double radius[] = {newplanet.getRadius(planetNumberOne), newplanet.getRadius(planetNumberTwo)};
 				
-				
 				textArea.setText(newplanet.getSolarSystem(planetNumberOne, planetNumberTwo));
 
 				planetOne.distanceFromSun[0] = distanceFromSun[0];
@@ -246,14 +238,6 @@ public class PlanetTest2 {
 				(newplanet.getDistanceFromSun(planetNumberTwo)/planetOne.div2 + newplanet.getDiameter(planetNumberTwo)/planetOne.div3) - 
 				(newplanet.getDistanceFromSun(planetNumberOne)/planetOne.div2 + newplanet.getDiameter(planetNumberOne)/planetOne.div3));
 		
-				//System.out.println(planetOne.distanceFromSun[0] + " " + planetOne.distanceFromSun[1]);
-				
-				
-				
-					//planetOne.centerOfGravity=distanceFromSun[0]*25;
-
-				//MakeCircle planetOne = new MakeCircle(100, 50);
-				
 				planetOne.setVisible(true);
 				planetOne.repaint();
 				
@@ -270,13 +254,7 @@ public class PlanetTest2 {
 			public void actionPerformed(ActionEvent e) {
 				trianglePane.setVisible(true);
 				gravity_Panel.setVisible(false);
-				
-				/*panel.setVisible(false);
-				panel_1.setVisible(false);
-				panel_3.setVisible(false);
-				panel_4.setVisible(false);
-				scrollPane_1.setVisible(false);*/
-				
+				trianglePane.repaint();
 			}
 		});
 		
@@ -285,11 +263,6 @@ public class PlanetTest2 {
 				trianglePane.setVisible(false);
 				gravity_Panel.setVisible(true);
 				
-				/*panel.setVisible(true);
-				panel_1.setVisible(true);
-				panel_3.setVisible(true);
-				panel_4.setVisible(true);
-				scrollPane_1.setVisible(true);*/
 			}
 		});
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
