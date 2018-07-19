@@ -17,6 +17,10 @@ public class MakeCircle extends JPanel{
 		
 		super.paintComponent(g);
 		
+<<<<<<< HEAD
+=======
+		
+>>>>>>> refs/remotes/origin/master
 		diameter[0] = (int)radius[0]/2;
 		diameter[1] = (int)radius[1]/2;
 		g.setColor(Color.YELLOW);

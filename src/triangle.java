@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -41,3 +42,18 @@ public class triangle extends JPanel {
 	}
 
 }
+=======
+import javax.swing.JPanel;
+
+public class triangle extends JPanel {
+
+	/**
+	 * Create the panel.
+	 */
+	public triangle() {
+		setLayout(null);
+
+	}
+
+}
+>>>>>>> refs/remotes/origin/master
