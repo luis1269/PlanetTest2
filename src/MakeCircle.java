@@ -17,10 +17,6 @@ public class MakeCircle extends JPanel{
 		
 		super.paintComponent(g);
 		
-<<<<<<< HEAD
-=======
-		
->>>>>>> refs/remotes/origin/master
 		diameter[0] = (int)radius[0]/2;
 		diameter[1] = (int)radius[1]/2;
 		g.setColor(Color.YELLOW);
@@ -41,12 +37,5 @@ public class MakeCircle extends JPanel{
 		g.drawLine((int)centerOfGravity , 100, (int)centerOfGravity, 400);
 		//System.out.println((int)distanceFromSun[1]*div1+(int)radius[0]/div2);
 		
-		
 	}
-
-
-	
-		
-	
-	
 }
