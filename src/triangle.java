@@ -1,5 +1,3 @@
-//This is a test
-import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -12,8 +10,6 @@ import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import java.awt.BorderLayout;
 import java.awt.Component;
-import javax.swing.border.BevelBorder;
-import java.awt.Color;
 import javax.swing.SwingConstants;
 import javax.swing.JButton;
 import javax.swing.JTextField;
@@ -164,6 +160,3 @@ public class triangle extends JPanel {
 	
 	
 }
-
-
-
